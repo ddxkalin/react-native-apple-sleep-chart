@@ -1,4 +1,4 @@
-import type { SharedValue } from "react-native-reanimated";
+import type { OpaqueColorValue } from "react-native";
 
 /**
  * Represents a single sleep segment in the chart.
@@ -87,17 +87,19 @@ export type SleepStagesChartProps = {
 /**
  * Internal resolved theme (all values guaranteed present).
  */
+export type ColorValue = string | OpaqueColorValue;
+
 export type ResolvedTheme = {
   colors: {
     background: {
-      primary: string;
-      secondary: string;
-      tertiary: string;
+      primary: ColorValue;
+      secondary: ColorValue;
+      tertiary: ColorValue;
     };
     text: {
-      primary: string;
-      secondary: string;
-      tertiary: string;
+      primary: ColorValue;
+      secondary: ColorValue;
+      tertiary: ColorValue;
     };
   };
   stages: SleepStageMap;
