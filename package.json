@@ -1,6 +1,6 @@
 {
   "name": "react-native-apple-sleep-chart",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A React Native sleep stages chart (hypnogram) component inspired by the iOS Health app. Features interactive pan gesture with haptic feedback, customizable themes, and smooth Reanimated animations.",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
