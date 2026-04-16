@@ -1,0 +1,30 @@
+# Example app
+example/
+
+# React Native project files (not needed for the npm package)
+ios/
+android/
+.bundle/
+.yarn/
+
+# Development files
+*.tgz
+.DS_Store
+.watchmanconfig
+.yarnrc.yml
+yarn.lock
+Gemfile
+Gemfile.lock
+app.json
+metro.config.js
+jest.config.js
+babel.config.js
+index.js
+opencode.json
+
+# Source files (we ship dist/ + src/ for source maps)
+# src/ is included for consumers who want to read the source
+
+# Git
+.git/
+.gitignore

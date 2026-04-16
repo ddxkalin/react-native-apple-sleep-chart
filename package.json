@@ -1,0 +1,110 @@
+{
+  "name": "react-native-apple-sleep-chart",
+  "version": "1.0.0",
+  "description": "A React Native sleep stages chart (hypnogram) component inspired by the iOS Health app. Features interactive pan gesture with haptic feedback, customizable themes, and smooth Reanimated animations.",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "files": [
+    "src/",
+    "lib/",
+    "!src/**/*.test.*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typescript": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "jest",
+    "example:android": "react-native run-android",
+    "example:ios": "react-native run-ios",
+    "example:start": "react-native start",
+    "prepare": "bob build",
+    "release": "release-it"
+  },
+  "keywords": [
+    "react-native",
+    "sleep",
+    "chart",
+    "hypnogram",
+    "sleep-stages",
+    "health",
+    "ios-health",
+    "gesture",
+    "haptic",
+    "reanimated",
+    "svg"
+  ],
+  "author": "ddxkalin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddxkalin/react-native-apple-sleep-chart"
+  },
+  "bugs": {
+    "url": "https://github.com/ddxkalin/react-native-apple-sleep-chart/issues"
+  },
+  "homepage": "https://github.com/ddxkalin/react-native-apple-sleep-chart#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "@react-native-masked-view/masked-view": ">=0.3.0",
+    "react": ">=18.0.0",
+    "react-native": ">=0.70.0",
+    "react-native-gesture-handler": ">=2.0.0",
+    "react-native-haptic-feedback": ">=2.0.0",
+    "react-native-reanimated": ">=3.0.0",
+    "react-native-svg": ">=13.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react-native-haptic-feedback": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "@babel/runtime": "^7.20.0",
+    "@react-native-masked-view/masked-view": "^0.3.2",
+    "@react-native/babel-preset": "0.75.4",
+    "@react-native/eslint-config": "0.75.4",
+    "@react-native/metro-config": "0.75.4",
+    "@react-native/typescript-config": "0.75.4",
+    "@types/react": "^18.2.6",
+    "@types/react-test-renderer": "^18.0.0",
+    "babel-jest": "^29.6.3",
+    "eslint": "^8.19.0",
+    "jest": "^29.6.3",
+    "prettier": "2.8.8",
+    "react": "18.3.1",
+    "react-native": "0.75.4",
+    "react-native-builder-bob": "^0.30.0",
+    "react-native-gesture-handler": "2.20.0",
+    "react-native-haptic-feedback": "^2.3.3",
+    "react-native-reanimated": "3.15.5",
+    "react-native-svg": "15.7.1",
+    "react-test-renderer": "18.3.1",
+    "typescript": "5.0.4"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.json"
+        }
+      ]
+    ]
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "yarn@3.6.4"
+}
